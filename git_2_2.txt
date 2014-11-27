@@ -1,0 +1,6 @@
+git clone https://github.com/hhru/frontik.git ./git_2_2/
+cd git_2_2
+git filter-branch --subdirectory-filter frontik/testing -- --all
+git remote rm origin
+git remote add origin git@github.com:Effessio/github_home_work_2_b.git
+git push -u origin master
